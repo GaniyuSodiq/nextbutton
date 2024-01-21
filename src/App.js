@@ -1,7 +1,8 @@
-import logo from "./logo.svg";
 import "./App.css";
 
 function App() {
+  const messages = ["Learn React 📚", "Get Good Job 🤑", "Save Your Money 🏦"];
+
   return (
     <div className="App">
       <div className="numbers">
@@ -10,7 +11,7 @@ function App() {
         <div>3</div>
       </div>
       <div className="message">
-        <p></p>
+        <p>{messages[0]}</p>
       </div>
       <div className="buttons">
         <button>Previuos</button>
