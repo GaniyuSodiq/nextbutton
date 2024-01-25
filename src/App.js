@@ -7,10 +7,10 @@ function App() {
   const [step, setStep] = useState(1);
 
   function handleNext() {
-    step <= 2 && setStep(step + 1);
+    step <= 2 && setStep((s) => s + 1);
   }
   function handlePrevious() {
-    step > 1 && setStep(step - 1);
+    step > 1 && setStep((s) => s - 1);
   }
 
   return (
