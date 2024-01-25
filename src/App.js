@@ -7,7 +7,10 @@ function App() {
   const [step, setStep] = useState(1);
 
   function handleNext() {
-    step <= 3 && setStep(step + 1);
+    step <= 2 && setStep(step + 1);
+  }
+  function handlePrevious() {
+    step > 1 && setStep(step - 1);
   }
 
   return (
@@ -18,10 +21,12 @@ function App() {
         <div className={step >= 3 ? "numberColor" : ""}>3</div>
       </div>
       <div className="message">
-        <p>{messages[0]}</p>
+        <p>
+          Step: {step} {messages[step - 1]}
+        </p>
       </div>
       <div className="buttons">
-        <button>Previuos</button>
+        <button onClick={handlePrevious}>Previuos</button>
         <button onClick={handleNext}>Next</button>
       </div>
     </div>
