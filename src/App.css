@@ -32,6 +32,10 @@
   border: #101935 solid 1px;
 }
 
+.message p {
+  font-weight: bolder;
+}
+
 .buttons {
   display: flex;
   justify-content: space-evenly;
@@ -39,6 +43,7 @@
 
 button {
   padding: 10px;
+  font-weight: 600;
 }
 
 .numberColor {
